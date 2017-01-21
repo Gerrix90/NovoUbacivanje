@@ -14,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         probaTv = (TextView) findViewById(R.id.probaTv);
-        probaTv.setText("Ipak cu ostaviti samo ovo!");
+        probaTv.setText("Cisto da proverimo da li sve sljaka");
     }
 }
