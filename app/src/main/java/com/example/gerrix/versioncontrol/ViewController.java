@@ -14,10 +14,7 @@ public class ViewController {
         this.viewClass = viewClass;
     }
 
-    public void addStudent(Student student){
-        this.student = student;
-    }
     public void display(){
-        this.viewClass.displey(this.student);
+        this.viewClass.displey(this.student.getName());
     }
 }

@@ -14,8 +14,8 @@ public class ViewClass {
         this.textView = textView;
     }
 
-    public void displey(Student student){
+    public void displey(String student){
 
-        textView.setText(student.getName());
+        textView.setText(student);
     }
 }

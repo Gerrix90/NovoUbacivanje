@@ -15,12 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
         probaTv = (TextView) findViewById(R.id.probaTv);
 
-        ViewClass viewClass = new ViewClass(probaTv);
 
-        ViewController viewController = new ViewController(new Student(),
-                viewClass);
 
-        viewController.addStudent(new Student("Jahja"));
+        ViewController viewController = new ViewController(new Student("Jahja"),
+                new ViewClass(probaTv));
+
         viewController.display();
     }
 }
