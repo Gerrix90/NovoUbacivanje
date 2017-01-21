@@ -14,6 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         probaTv = (TextView) findViewById(R.id.probaTv);
-        probaTv.setText("Cisto da proverimo da li sve sljaka");
+
+        ViewClass viewClass = new ViewClass(probaTv);
+
+        ViewController viewController = new ViewController(new Student(),
+                viewClass);
+
+        viewController.addStudent(new Student("Jahja"));
+        viewController.display();
     }
 }
